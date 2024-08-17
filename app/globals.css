@@ -27,3 +27,7 @@ input {
   outline: none;
   border: none;
 }
+
+.lobster {
+  font-family: "Lobster", cursive;
+}

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -7,7 +7,7 @@ export default function SignIn() {
   const router = useRouter();
   const onLogin = () => {
     router.push("/home");
-  }
+  };
   return (
     <div className="bg-gradient-to-b from-[#c2d0e4] to-[#e8f0fe] min-h-screen flex flex-col items-center justify-center px-4 py-12">
       <div className="w-full max-w-md">
@@ -29,7 +29,8 @@ export default function SignIn() {
           <div className="relative">
             <input
               type="text"
-              value='admin@dreamland.com'
+              value="admin@dreamland.com"
+              readOnly
               placeholder="Email hoặc số điện thoại"
               className="w-full h-12 bg-white px-4 rounded-full shadow-sm border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 transition duration-200 ease-in-out"
             />
@@ -37,12 +38,16 @@ export default function SignIn() {
           <div className="relative">
             <input
               type="password"
+              readOnly
               value="admin"
               placeholder="Mật khẩu"
               className="w-full h-12 bg-white px-4 rounded-full shadow-sm border border-gray-300 focus:border-blue-500 focus:ring focus:ring-blue-200 transition duration-200 ease-in-out"
             />
           </div>
-          <button onClick={onLogin} className="w-full h-12 bg-[#3498db] text-white font-semibold rounded-full shadow-md hover:bg-[#2980b9] transition duration-200 ease-in-out">
+          <button
+            onClick={onLogin}
+            className="w-full h-12 bg-[#3498db] text-white font-semibold rounded-full shadow-md hover:bg-[#2980b9] transition duration-200 ease-in-out"
+          >
             Đăng nhập
           </button>
         </div>
