@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { Lobster } from "next/font/google";
+import Link from "next/link";
 
 const lobster = Lobster({ weight: ["400"], subsets: ["latin"] });
 export default function Header() {
@@ -50,14 +51,17 @@ export default function Header() {
               />
             </svg>
           </button>
-          <div className="w-8 h-8 rounded-full bg-gray-300 overflow-hidden">
+          <Link
+            href="/profile/user-1"
+            className="block w-8 h-8 rounded-full bg-gray-300 overflow-hidden"
+          >
             <Image
               src="/images/user.png"
               alt="User Avatar"
               width={32}
               height={32}
             />
-          </div>
+          </Link>
         </div>
       </div>
 

@@ -1,12 +1,10 @@
 "use client";
-import Image from "next/image";
-import React from "react";
-import { useState } from "react";
-import msgPath from "@/components/images/msg-path.png";
 import chervonDown from "@/components/images/chervon-down.png";
-import Footer from "./Footer";
+import msgPath from "@/components/images/msg-path.png";
 import { messageList } from "@/data";
+import Image from "next/image";
 import Link from "next/link";
+import Footer from "./Footer";
 export default function MessageList() {
   //   px-4 bg-[#c2d0e4]
   return (
@@ -14,7 +12,7 @@ export default function MessageList() {
       <div className="flex flex-col h-screen px-4 bg-[#f5f5f5] py-10">
         {/* Header */}
         <div className="relative px-4">
-          <div className="fixed -top-[15%] -left-[calc(20%+10px)]">
+          <div className="fixed top-0 left-0 -translate-x-[40%] -translate-y-[40%]">
             <Image src={msgPath} alt="" />
           </div>
           <div>

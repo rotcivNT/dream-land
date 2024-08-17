@@ -28,21 +28,41 @@ const Footer = () => {
           />
         </div>
         <span
-          className={`mt-1 font-bold text-xl ${
+          className={`mt-1 font-bold text-lg ${
             pathName.includes("home") ? "text-[#1b1e3f]" : "text-white"
           }`}
         >
           Home
         </span>
       </Link>
-      <Link href="/#" className="text-white flex flex-col items-center">
-        <div className="bg-[#1b1e3f] border border-white p-2 rounded-full flex items-center justify-center">
-          <ShoppingCartIcon className="w-6 h-6 text-white" />
+      <Link href="/cart" className="text-white flex flex-col items-center">
+        <div
+          className={`${
+            !pathName.includes("cart")
+              ? "bg-[#1b1e3f] border border-white"
+              : "bg-white"
+          } p-2 rounded-full flex items-center justify-center`}
+        >
+          <ShoppingCartIcon
+            className={`w-6 h-6 ${
+              pathName.includes("cart") ? "text-[#1b1e3f]" : "text-white"
+            }`}
+          />
         </div>
       </Link>
-      <Link href="#" className="text-white flex flex-col items-center">
-        <div className="bg-[#1b1e3f] border border-white p-2 rounded-full flex items-center justify-center">
-          <CreditCardIcon className="w-6 h-6 text-white" />
+      <Link href="/billing" className="text-white flex flex-col items-center">
+        <div
+          className={`${
+            !pathName.includes("billing")
+              ? "bg-[#1b1e3f] border border-white"
+              : "bg-white"
+          } p-2 rounded-full flex items-center justify-center`}
+        >
+          <CreditCardIcon
+            className={`w-6 h-6 ${
+              pathName.includes("billing") ? "text-[#1b1e3f]" : "text-white"
+            }`}
+          />
         </div>
       </Link>
       <Link href="/messages" className="text-white flex flex-col items-center">
@@ -60,9 +80,19 @@ const Footer = () => {
           />
         </div>
       </Link>
-      <Link href="#" className="text-white flex flex-col items-center">
-        <div className="bg-[#1b1e3f] border border-white p-2 rounded-full flex items-center justify-center">
-          <CogIcon className="w-6 h-6 text-white" />
+      <Link href="/settings" className="text-white flex flex-col items-center">
+        <div
+          className={`${
+            !pathName.includes("setting")
+              ? "bg-[#1b1e3f] border border-white"
+              : "bg-white"
+          } p-2 rounded-full flex items-center justify-center`}
+        >
+          <CogIcon
+            className={`w-6 h-6 ${
+              pathName.includes("setting") ? "text-[#1b1e3f]" : "text-white"
+            }`}
+          />
         </div>
       </Link>
       <Link

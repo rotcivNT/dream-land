@@ -24,7 +24,7 @@ export default function DetailProject() {
     setTimeout(() => {
       setIsLoading(false);
       setModalContent(content); // Set the content after loading
-    }, 2000); // 2 seconds loading
+    }, 1000); // 1 seconds loading
   };
 
   const closeModal = () => {
@@ -144,7 +144,7 @@ export default function DetailProject() {
           <button className="text-sm text-blue-600 mt-2">Đọc thêm</button>
         </div>
         <button
-          onClick={() => onRedirect("/messages")}
+          onClick={() => onRedirect("/messages/chatbot")}
           className="bg-[#032b60] w-full py-3 rounded-md text-white text-sm mt-10"
         >
           Tư vấn ngay
