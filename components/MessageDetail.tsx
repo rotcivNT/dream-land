@@ -41,7 +41,7 @@ const ChatUI = () => {
     setTimeout(() => {
       const botChat = {
         isMine: false,
-        content: "Xin chào.",
+        content: "Xin chào, Tôi có thể giúp gì cho bạn?",
       };
       setLoading(false);
       setCurrentMessage((prev) => {
